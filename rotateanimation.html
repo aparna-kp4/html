@@ -1,24 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Rotate Image in Circle</title>
-<style>
-    img {
-        height: 250px;
-        width: 250px;
-        border-radius: 90%;
-        animation: rotateImage 4s linear infinite;
-    }
 
-    @keyframes rotateImage {
-        from { transform: rotate(0deg); }
-        to { transform: rotate(360deg); }
-    }
-</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rotate Image in Right Corner</title>
+    <style>
+        /*body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+    }*/
+        img {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            height: 250px;
+            width: 250px;
+            border-radius: 50%;
+            /* use 50% for perfect circle */
+            animation: rotateImage 4s linear infinite;
+        }
+
+        @keyframes rotateImage {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <img src="4-beautiful-flower-wallpaper-hd-saxyman.jpg">
+    <img src="hero.png" alt="Rotating Image">
 </body>
+
 </html>
